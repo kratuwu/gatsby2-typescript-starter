@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
+const Header: React.StatelessComponent<{siteTitle:any}> = (props) => (
   <div
     style={{
       background: 'rebeccapurple',
@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          {props.siteTitle}
         </Link>
       </h1>
     </div>
